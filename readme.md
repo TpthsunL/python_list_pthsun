@@ -38,7 +38,7 @@ df["요일명"]=df["요일"].map(find_dayofweek)
 ### 5. 결측치
 
 isna(), fillna() 
-dropna(how='all', axis=1)
+dropna(how='all', axis=1) #결측치가 하나라도 있는 곳을 제거 
 dropna(how='all', axis=0)
 
 ### 6. 인덱스
@@ -51,7 +51,7 @@ cumsum()
 ### 8. pd.concat 함수
 concat은 단순히 합치는 것이다. 
 axis=0 행이니까 밑으로
-axis=1 열이니까 옆으로 
+axis=1 열이니까 옆으로
 
 ### 9. pivot_table : 빠르게 계산해주는 함수 
 pdf1 = pd.pivot_table(df,                # 피벗할 데이터프레임
@@ -114,7 +114,27 @@ C_002   P_001       300        3
 
 
 
-### 11. 
+### 11. plot 
+
+(1) 일반 그래프 그릴때, 겹쳐서 나온다??? 
+이때,g= df_last.groupby(["지역명","전용면적"])["평당분양가격"].mean().unstack() 이처럼 unstack()을 사용하여 쉽게 나타낸다. 
+
+(2) 플랏에서 선을 그리고 싶다??
+plt.axhline(15000) 기준선이 그어지는데, 중요하긴 하다. 
+
+(3) plot에서는 subplot도 지원한다. 
+great[["경기","서울", "제주"]].plot(figsize=(14,8), rot=30, title="연도와 지역별 평당분양가격", subplots=True)
+
+*여러개가 많이 나올때, 특정 칼럼만 지정하여, subplots=True를 사용하여 쉽게 나타낸다.
+
+(4) 
+
+
+### 12. sns
+(1) 스타일 변경방법
+sns.set(style='darkgrid')
+(2) hue : 분류
+예를들어, gender라는 hue가 "male"과 "female"이 있다면, 그래프에서 다른색으로 표시된다. 
 
 
 
