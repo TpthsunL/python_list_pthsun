@@ -1,15 +1,20 @@
 # LIST GGUL TIP
 
 ### 1. 기본 데이터 분석시 필요한 라이브러리
-import pandas as pd
+import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline
 
 plt.rc("font", family="Malgun Gothic") #한글 폰트 
+
+from IPython.display import set_matplotlib_formats #폰트 선명하게 설정.
+set_matplotlib_formats('retina') 
+
 plt.rc("axes", unicode_minus=False) #마이너스 코드 
 print(plt.style.available) #스타일 보기 
 plt.style.use("fivethirtyeight") # plot() 테마설정하기 
+
 
 ### 2. 빈도수 구하기 3가지 방법 ex) '월', '지역'
 month_gu=df_oversea.groupby(["월", "지역"])["연번"].count().unstack()
@@ -143,7 +148,9 @@ sns.set(style='darkgrid')
 
 
 
-
+* 알아두면 좋은 팁
+- 도움말을 보고자 할때는 ? 를 사용하고 소스코드를 볼 때는 ??를 사용합니다.
+- 주피터 노트북에서는 함수나 메소드의 괄호 안에서 shift + tab 키를 누르면 도움말을 볼 수 있습니다.
 
 
 
