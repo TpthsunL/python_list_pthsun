@@ -145,13 +145,25 @@ sns.set(style='darkgrid')
 
 
 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
 
 
 
 * 알아두면 좋은 팁
 - 도움말을 보고자 할때는 ? 를 사용하고 소스코드를 볼 때는 ??를 사용합니다.
 - 주피터 노트북에서는 함수나 메소드의 괄호 안에서 shift + tab 키를 누르면 도움말을 볼 수 있습니다.
-
+- 이미지 넣는 방법 : <img src="url" width="넓이의 값">
+ ex) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/300px-JSON_vector_logo.svg.png" width="100">
 
 
 
