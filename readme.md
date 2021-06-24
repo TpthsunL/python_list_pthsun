@@ -15,6 +15,14 @@ plt.rc("axes", unicode_minus=False) #마이너스 코드
 print(plt.style.available) #스타일 보기 
 plt.style.use("fivethirtyeight") # plot() 테마설정하기 
 
+- 파이썬 기본 라이브러리
+1. 날짜 
+* 날짜를 만들어 저장하기 위해 오늘 날짜를 구합니다. 
+import datetime
+today = datetime.datetime.today().strftime('%Y-%m-%d')
+
+
+
 
 ### 2. 빈도수 구하기 3가지 방법 ex) '월', '지역'
 month_gu=df_oversea.groupby(["월", "지역"])["연번"].count().unstack()
@@ -145,7 +153,16 @@ sns.set(style='darkgrid')
 
 
 
-### 
+### 13. 파이썬 저장방법에 대하여 
+(1) 저장할때,
+df.to_csv(파일이름,....)
+* 옵션
+현재 인덱스는 빼고 넣는다. : index = False
+
+(2) 불러올때
+pd.read_csv(파일이름,....)
+* 옵션
+itemcode 숫자 앞의 0 이 지워진다면 dtype={"itemcode": np.object} 로 타입을 지정해 주면 문자형태로
 ### 
 ### 
 ### 
