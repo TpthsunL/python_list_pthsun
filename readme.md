@@ -51,8 +51,10 @@ df["요일명"]=df["요일"].map(find_dayofweek)
 ### 5. 결측치
 
 isna(), fillna() 
-dropna(how='all', axis=1) #결측치가 하나라도 있는 곳을 제거 
-dropna(how='all', axis=0)
+axis=
+0: 행 1: 열
+how ='any' : 결측치가 있는 곳이라면 전부다. 삭제 
+    ='all' : 전체가 결측있는 곳만 삭제 
 
 ### 6. 인덱스
 set_index : 인덱스 넣기
