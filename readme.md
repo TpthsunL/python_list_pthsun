@@ -192,7 +192,10 @@ loc는 위에서 인덱스번호대로
 iloc는 위에서 순서대로 
 
 * loc 쓸때 주의할 점 : df.loc[df['xx']=='xx','xx'], 혹은 df.loc[(df['xx']=='xx') & (df['xx']=='xx')]
-### 
+
+### 18. 이것을 포함하는 여부  (isin)
+isin(values)
+ * 구성된 애들이 있는 놈들만 데이터프레임화 시키기 : df[df['clarity'].isin(top_index)]
 ### 
 ### 
 ### 
