@@ -165,12 +165,33 @@ df.to_csv(파일이름,....)
 pd.read_csv(파일이름,....)
 * 옵션
 itemcode 숫자 앞의 0 이 지워진다면 dtype={"itemcode": np.object} 로 타입을 지정해 주면 문자형태로
+
 ### 14. 삭제
 열 삭제 : .drop(axis=1)
 행 삭제 : .drop(axis=0)
-### 
-### 
-### 
+
+### 15. 정렬
+(1) 기본정렬 
+- df.sort_values(by='total', ascending=False).groupby('name', sort=False).head(3)
+- df.groupby('name').apply(lambda x: x.nlargest(3, 'total'))
+
+(2) 혼합정렬
+df.sort_values(by=['carat', 'depth'], ascending=[False, True]).head(5)
+
+### 16. groupby 
+(1) 기본정렬 
+grouped_ww.mean() # Series
+(2) 리스트로 사용하는 .agg 함수방법
+function_list = ['size', 'mean', 'std', 'min', 'max']
+
+grouped_ww.agg(function_list)
+출처: https://rfriend.tistory.com/392 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
+
+### 17. loc와 iloc
+loc는 위에서 인덱스번호대로 
+iloc는 위에서 순서대로 
+
+* loc 쓸때 주의할 점 : df.loc[df['xx']=='xx','xx'], 혹은 df.loc[(df['xx']=='xx') & (df['xx']=='xx')]
 ### 
 ### 
 ### 
