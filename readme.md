@@ -7,15 +7,14 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 
 plt.rc("font", family="Malgun Gothic") #한글 폰트 
-
+plt.rc("axes", unicode_minus=False) #마이너스 코드 
 from IPython.display import set_matplotlib_formats #폰트 선명하게 설정.
 set_matplotlib_formats('retina') 
 
-plt.rc("axes", unicode_minus=False) #마이너스 코드 
 print(plt.style.available) #스타일 보기 
 plt.style.use("fivethirtyeight") # plot() 테마설정하기 
 
-- 파이썬 기본 라이브러리
++ 파이썬 라이브러리
 1. 날짜 
 * 날짜를 만들어 저장하기 위해 오늘 날짜를 구합니다. 
 import datetime
@@ -164,7 +163,8 @@ df.to_csv(파일이름,....)
 (2) 불러올때
 pd.read_csv(파일이름,....)
 * 옵션
-itemcode 숫자 앞의 0 이 지워진다면 dtype={"itemcode": np.object} 로 타입을 지정해 주면 문자형태로
+- itemcode 숫자 앞의 0 이 지워진다면 dtype={"itemcode": np.object} 로 타입을 지정해 주면 문자형태로
+- sep='|' : 토큰나이징 얘기 나오면
 
 ### 14. 삭제
 열 삭제 : .drop(axis=1)
@@ -197,6 +197,7 @@ iloc는 위에서 순서대로
 isin(values)
  * 구성된 애들이 있는 놈들만 데이터프레임화 시키기 : df[df['clarity'].isin(top_index)]
 ### 
+
 ### 
 ### 
 ### 
