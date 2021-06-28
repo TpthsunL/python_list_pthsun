@@ -10,6 +10,7 @@ plt.rc("font", family="Malgun Gothic") #한글 폰트
 plt.rc("axes", unicode_minus=False) #마이너스 코드 
 from IPython.display import set_matplotlib_formats #폰트 선명하게 설정.
 set_matplotlib_formats('retina') 
+pd.Series([-1,0,1,3,5]).plot(title="한글폰트") # 한글폰트와 마이너스 폰트 설정 확인
 
 print(plt.style.available) #스타일 보기 
 plt.style.use("fivethirtyeight") # plot() 테마설정하기 
