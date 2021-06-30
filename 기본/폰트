@@ -1,0 +1,68 @@
+1) 시스템 환경에 따른 기본 폰트명을 반환하는 함수
+def get_font_family():
+    """
+    시스템 환경에 따른 기본 폰트명을 반환하는 함수
+    """
+    import platform
+    system_name = platform.system()
+    # colab 사용자는 system_name이 'Linux'로 확인
+
+    if system_name == "Darwin" :
+        font_family = "AppleGothic"
+    elif system_name == "Windows":
+        font_family = "Malgun Gothic"
+    else:
+        # Linux
+        # colab에서는 runtime을 <꼭> 재시작 해야합니다.
+        # 런타임을 재시작 하지 않고 폰트 설치를 하면 기본 설정 폰트가 로드되어 한글이 깨집니다.
+        !apt-get update -qq
+        !apt-get install fonts-nanum -qq  > /dev/null
+
+        import matplotlib.font_manager as fm
+
+        fontpath = '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf'
+        font = fm.FontProperties(fname=fontpath, size=9)
+        fm._rebuild()
+        font_family = "NanumBarunGothic"
+    return font_family
+    
+2) 현재 폰트명
+font_family = get_font_family()
+font_family
+
+3) 사용가능한 폰트 스타일
+print(plt.style.available)
+
+4) 시작하기 전에 해야할 것
+# 폰트설정
+plt.rc("font", family=font_family)
+
+# 마이너스폰트 설정
+plt.rc("axes", unicode_minus=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
