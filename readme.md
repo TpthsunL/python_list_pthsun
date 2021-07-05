@@ -25,6 +25,9 @@ today = datetime.datetime.today().strftime('%Y-%m-%d')
 from mpl_toolkits.mplot3d import Axes3D # matplotlib의 2D 그래프에 3D 오브젝트를 그리도록 해주는 라이브러리
 from mpl_toolkits.mplot3d import proj3d
 
+3. 점수
+from sklearn.metrics import silhouette_score
+silhouette score의 경우는 개별 개체에 대해서 값을 도출할 수 있습니다. sklearn은 각 sample에 대해서 계산할 수 있게도 하고, 평균 값을 내는 것도 지원함.
 
 
 
@@ -207,7 +210,9 @@ isin(values)
 
 ### 19. plotly 
 
-### 
+### 20. range와 enumerate 함수 
+enumerate 함수
+리스트가 있는 경우 순서와 리스트의 값을 전달하는 기능을 가집니다.
 ### 
 ### 
 ### 
