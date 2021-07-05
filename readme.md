@@ -21,6 +21,10 @@ plt.style.use("fivethirtyeight") # plot() 테마설정하기
 import datetime
 today = datetime.datetime.today().strftime('%Y-%m-%d')
 
+2. 그래픽 라이브러리
+from mpl_toolkits.mplot3d import Axes3D # matplotlib의 2D 그래프에 3D 오브젝트를 그리도록 해주는 라이브러리
+from mpl_toolkits.mplot3d import proj3d
+
 
 
 
