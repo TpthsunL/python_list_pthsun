@@ -65,6 +65,10 @@ how ='any' : 결측치가 있는 곳이라면 전부다. 삭제
     
 결측치 값이 0인 행 제거 : df.loc[:, (df != 0).any(axis=0)]
 
+전체적으로 결측치 존재하는가? : data.isnull().any().any()
+열 별로 결측치 존재하는가? data.isnull().any()
+
+
 ### 6. 인덱스
 set_index : 인덱스 넣기
 reset_index : 인덱스 빼기 
