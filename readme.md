@@ -163,6 +163,10 @@ great[["경기","서울", "제주"]].plot(figsize=(14,8), rot=30, title="연도�
 sns.set(style='darkgrid')
 (2) hue : 분류
 예를들어, gender라는 hue가 "male"과 "female"이 있다면, 그래프에서 다른색으로 표시된다. 
+(3) x축 라벨 바꾸기
+g = sns.lineplot(data=df_month,x='Month', y='PercentOfBaseline')
+g.set_xticks(range(3,13)) 
+g.set_xticklabels(['3','4','5','6','7','8','9','10','11','12'])
 
 
 
