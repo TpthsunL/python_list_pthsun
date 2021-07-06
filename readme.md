@@ -221,7 +221,16 @@ isin(values)
 ### 20. range와 enumerate 함수 
 enumerate 함수
 리스트가 있는 경우 순서와 리스트의 값을 전달하는 기능을 가집니다.
-### 
+### 30. sns 
+- markers 크기 조절
+plt.figure(figsize=(15,6))
+
+sns.lineplot(data=df, x="Month", y="PercentOfBaseline", hue="Country", marker='o', ci=None)
+plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+paper_rc = {'lines.linewidth': 1, 'lines.markersize': 5}                  
+sns.set_context("paper", rc = paper_rc)
+
+
 ### 
 ### 
 
