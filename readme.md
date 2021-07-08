@@ -231,7 +231,9 @@ paper_rc = {'lines.linewidth': 1, 'lines.markersize': 5}
 sns.set_context("paper", rc = paper_rc)
 
 
-### 
+### 31. map과 apply
+map : 자료형 변환시 사용한다.
+apply 는 다르다.  
 ### 
 
 
