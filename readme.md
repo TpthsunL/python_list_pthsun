@@ -53,7 +53,7 @@ def find_dayofweek(day_no):
     dayofweek = "월화수목금토일"
     return dayofweek[day_no]
 
-df["요일명"]=df["요일"].map(find_dayofweek)
+df["요일명"]=df["요일"].apply(find_dayofweek)
 
 ### 5. 결측치
 
