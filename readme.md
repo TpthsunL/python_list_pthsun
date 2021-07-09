@@ -234,7 +234,11 @@ sns.set_context("paper", rc = paper_rc)
 ### 31. map과 apply
 map : 자료형 변환시 사용한다.
 apply 는 다르다.  
-### 
+### 32. 행추출
+- 홀수만 뽑기
+ch5 = ch3.iloc[1::2]
+- 짝수만 뽑기
+ch5 = ch3.iloc[::2]
 
 
 
