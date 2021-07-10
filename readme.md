@@ -243,7 +243,7 @@ ch5 = ch3.iloc[::2]
 ### 33. 사진 업로드
 1. ctrl+v로 그냥 마크다운 상태에서 붙여넣을수도 있음. (크기조절은 불가능)
 2. 따라서 <img src='cnn.PNG' style='width:500px;'> 이 방법을 사용한다면 크기조절 가능한 것이 가능하게 된다. 
-  + style 안에 'height:(원하는숫자)px;
+  + style 안에 'height:(원하는숫자)px; => <img src='cnn.PNG' style='width:500px, height:200px;'> 
 
 
 * 알아두면 좋은 팁
