@@ -252,9 +252,10 @@ ch5 = ch3.iloc[::2]
 - 이미지 넣는 방법 : <img src="url" width="넓이의 값">
  ex) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/300px-JSON_vector_logo.svg.png" width="100">
 
+### 34. 소수점 고쳐주기 
 
 
-
+pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
