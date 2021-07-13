@@ -16,10 +16,12 @@ print(plt.style.available) #스타일 보기
 plt.style.use("fivethirtyeight") # plot() 테마설정하기 
 
 + 파이썬 라이브러리
-1. 날짜 
+1. 
 * 날짜를 만들어 저장하기 위해 오늘 날짜를 구합니다. 
 import datetime
 today = datetime.datetime.today().strftime('%Y-%m-%d')
+
+order_df['order_purchase_timestamp'][0].strftime("%A") #요일 만드는 간다한 
 
 2. 그래픽 라이브러리
 from mpl_toolkits.mplot3d import Axes3D # matplotlib의 2D 그래프에 3D 오브젝트를 그리도록 해주는 라이브러리
