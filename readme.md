@@ -257,8 +257,17 @@ ch5 = ch3.iloc[::2]
 ### 34. 소수점 고쳐주기 
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
-### 35. 
+### 35. 더블 칼럼명 합치기
 city_df.columns = city_df.columns.to_flat_index()
+
+### 36. 결측치 제거 안될때 사용해보기
+idx= []
+lt = clean_data['Power'].tolist()
+for i in range(len(lt)):
+    if( lt[i] == 'null'):
+        idx.append(i)
+clean_data = clean_data.drop(idx)
+clean_data = clean_data.reset_index(drop=True)
 
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
