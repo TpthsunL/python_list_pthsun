@@ -269,6 +269,8 @@ for i in range(len(lt)):
 clean_data = clean_data.drop(idx)
 clean_data = clean_data.reset_index(drop=True)
 
+### 37. lineregression에 담겨있다. 
+
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
 
