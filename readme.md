@@ -31,6 +31,11 @@ from mpl_toolkits.mplot3d import proj3d
 from sklearn.metrics import silhouette_score
 silhouette score의 경우는 개별 개체에 대해서 값을 도출할 수 있습니다. sklearn은 각 sample에 대해서 계산할 수 있게도 하고, 평균 값을 내는 것도 지원함.
 
+4. counter
+from collections import Counter
+1. Counter([1,2,1,2,13,34,2,134,1]) -> Counter({1: 3, 2: 3, 13: 1, 34: 1, 134: 1}) -> 각각의 개수를 세서 딕셔너리 형태로 나온다. 다음과 같이.
+2. Counter([1,2,1,2,13,34,2,134,1]).most_common(1) -> [(3,3)] 가장 많은거 한개를 뽑은것이다. 
+
 
 
 ### 2. 빈도수 구하기 3가지 방법 ex) '월', '지역'
