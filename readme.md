@@ -271,6 +271,9 @@ clean_data = clean_data.reset_index(drop=True)
 
 ### 37. lineregression에 담겨있다. 
 
+### 38. df_2008['출루율'] = df_2008['출루율'].apply(round, args=(3, ))
+
+### 
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
 
