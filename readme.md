@@ -278,6 +278,17 @@ clean_data = clean_data.reset_index(drop=True)
 
 ### 38. df_2008['출루율'] = df_2008['출루율'].apply(round, args=(3, ))
 
+
+### 39. 열 만들기
+* 여러개 만들때 짱 좋음.
+1. assign 이용할 것. 
+ 
+2.  transform을 사용해야 한다. 
+-> 왜냐하면 max는 행이 5개인데 이것을 고르게 배분하기 위해서는 현재 방법이 필요하다고 볼 수 있다. 
+ex) df['new_max'] = df.groupby('MSZoning')['LotArea'].transform(lamda x : x.max())
+
+3. agg 이용하는 방법
+
 ### 
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
