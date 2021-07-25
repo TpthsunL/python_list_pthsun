@@ -289,7 +289,8 @@ ex) df['new_max'] = df.groupby('MSZoning')['LotArea'].transform(lamda x : x.max(
 
 3. agg 이용하는 방법
 
-### 
+### 40. 소수점
+df_anal['OPS(sea)'].apply(lambda x :'{:.3f}'.format(x))
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
 
