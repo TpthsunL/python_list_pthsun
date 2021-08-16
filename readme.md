@@ -294,7 +294,9 @@ df_anal['OPS(sea)'].apply(lambda x :'{:.3f}'.format(x))
 출처: https://rfriend.tistory.com/278 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
 
 
-
+### 41. groupby agg
+여러 행을 하나의 행으로 합치기 
+https://www.python2.net/questions-222605.htm
 
 
 
