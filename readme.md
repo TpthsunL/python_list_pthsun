@@ -299,9 +299,10 @@ df_anal['OPS(sea)'].apply(lambda x :'{:.3f}'.format(x))
 https://www.python2.net/questions-222605.htm
 
 
+### 42. 홀수 행 뽑기
 
-
-
+print(1 % 2, 2 % 2)
+print(df.assign(g=df.index % 2).query('g==0'))
 
 
 
