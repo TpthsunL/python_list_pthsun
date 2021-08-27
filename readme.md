@@ -13,7 +13,7 @@ set_matplotlib_formats('retina')
 pd.Series([-1,0,1,3,5]).plot(title="한글폰트") # 한글폰트와 마이너스 폰트 설정 확인
 
 print(plt.style.available) #스타일 보기 
-plt.style.use("fivethirtyeight") # plot() 테마설정하기 
+plt.style.use("fivethirtyeight") # plot() 테마설정하기.
 
 + 파이썬 라이브러리
 1. 
