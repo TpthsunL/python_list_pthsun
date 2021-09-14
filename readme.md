@@ -15,6 +15,9 @@ pd.Series([-1,0,1,3,5]).plot(title="한글폰트") # 한글폰트와 마이너�
 print(plt.style.available) #스타일 보기 
 plt.style.use("fivethirtyeight") # plot() 테마설정하기.
 
+import warnings # 경고메세지 무시하기
+warnings.filterwarnings(action='ignore')
+
 + 파이썬 라이브러리
 1. 
 * 날짜를 만들어 저장하기 위해 오늘 날짜를 구합니다. 
