@@ -4,6 +4,7 @@
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 %matplotlib inline
 
 plt.rc("font", family="Malgun Gothic") #한글 폰트 
